@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Finance Calculator</title>
+</head>
+<body>
+    <h1>Finance Calculator</h1>
+
+    <label for="">Unit:</label>
+    <input type="radio" name="selectCar" value="720000"> 2016 HYUNDAI TUCSON
+    <input type="radio" name="selectCar" value="325000"> 2012 HYUNDAI ACCENT
+    <hr>
+
+    <button id="chooseCarBtn">Choose Car</button>
+    <hr>
+
+    <label for="">Unit Price:</label>
+    <input type="text" disabled id="displayCarValue">
+    <hr>
+
+    <label for="">Down Payment%:</label>
+    <input type="number" placeholder="Enter Down Payment" id="downPaymentValue">
+    <hr>
+
+    <label for="">Interest Rate (%):</label>
+    <input type="number" placeholder="Enter Interest Rate" id="interestRateValue">
+    <hr>
+
+    <label for="">Loan Term (months):</label>
+    <select id="loanTerm">
+        <option value="12">1 year</option>
+        <option value="24">2 year</option>
+        <option value="36">3 year</option>
+        <option value="48">4 year</option>
+        <option value="60">5 year</option>
+    </select>
+    <hr>
+
+    <label for="">Include Insurance:</label>
+    <input type="checkbox" name="includeInsurance" value="You are insured." id="includeInsurance">
+    <hr>
+
+    <button id="calculateBtn">Calculate</button>
+
+    <h2>Car Details:</h2>
+    <div id="carDetails"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
